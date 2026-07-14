@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>CFT华南区高级零售经理维度汇总海报</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; }
+.poster { width:1400px; margin:0 auto; background:#FFFFFF; border-radius:16px; overflow:hidden; }
+.title-band { background:#1F3864; margin:0 -32px; padding:24px 32px 12px; color:#FFFFFF; text-align:center; }
+.title-band h1 { font-size:22px; font-weight:700; letter-spacing:1px; margin-bottom:4px; }
+.header-row { display:grid; grid-template-columns:repeat(12, 1fr); align-items:center; font-size:13px; font-weight:500; text-align:center; background:#1B4332; color:#FFFFFF; padding:12px 32px; }
+.header-row .hcell { display:flex; align-items:center; justify-content:center; }
+.header-row .hcell.col-yesterday { background:#2e7d32; }
+.header-row .hcell.col-may, .header-row .hcell.col-change { background:#d4e6f9; color:#222222; }
+.huanan-row { display:grid; grid-template-columns:repeat(12, 1fr); align-items:center; font-size:13px; font-weight:700; text-align:center; background:#D5E8D4; color:#222222; padding:12px 32px; }
+.huanan-row .hcell { display:flex; align-items:center; justify-content:center; }
+.mgr-row { display:grid; grid-template-columns:repeat(12, 1fr); align-items:center; font-size:13px; font-weight:400; text-align:center; padding:12px 32px; border-bottom:1px solid #E8E8E8; }
+.mgr-row:nth-child(even) { background:#F7F9FC; }
+.mgr-row:nth-child(odd) { background:#FFFFFF; }
+.mgr-row .cell { display:flex; align-items:center; justify-content:center; }
+.mgr-row .cell-mgr { display:flex; align-items:center; justify-content:center; }
+.mgr-row .cell-mgr .mgr-name { font-weight:700; color:#1F3864; }
+.cft-badge { display:inline-block; padding:3px 10px; border-radius:6px; font-weight:700; font-size:13px; }
+.bar-cell { display:flex; align-items:center; justify-content:center; padding:0 4px; }
+.bar-wrap { width:100%; height:20px; background:#f0f0f0; border-radius:4px; overflow:hidden; position:relative; display:flex; align-items:center; }
+.bar { height:100%; border-radius:4px; }
+.bar.green { background:linear-gradient(90deg, #C8E6C9, #43A047); }
+.bar.red { background:linear-gradient(90deg, #FFCDD2, #EF5350); }
+.bar-val { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); font-weight:700; font-size:12px; white-space:nowrap; z-index:2; }
+.bar-val.green { color:#222222; }
+.bar-val.red { color:#222222; }
+.footer-note { text-align:center; padding:10px 32px 14px; font-size:11px; color:#888888; letter-spacing:0.5px; }
+/* 门店明细区 */
+.detail-section { margin:0; }
+.detail-spacer { height:28px; }
+.detail-title { background:#1F3864; color:#FFFFFF; text-align:center; font-size:15px; font-weight:700; padding:12px 0; margin:0 -32px 0; letter-spacing:0.5px; }
+.detail-grid-head { display:grid; grid-template-columns: 2.4fr 1.4fr 1.1fr 1.1fr 0.9fr 1.3fr 1.1fr 1.3fr 1.1fr 1.3fr; background:#1B4332; color:#FFFFFF; font-size:12px; font-weight:500; text-align:center; align-items:center; padding:8px 32px; }
+.detail-grid { display:grid; grid-template-columns: 2.4fr 1.4fr 1.1fr 1.1fr 0.9fr 1.3fr 1.1fr 1.3fr 1.1fr 1.3fr; font-size:12px; text-align:center; align-items:center; padding:5px 32px; border-bottom:1px solid #f0f0f0; }
+.detail-grid:nth-child(even) { background:#F7F9FC; }
+.detail-grid .store-name { text-align:center; font-weight:500; color:#333; }
+.detail-grid .mgr-cell { font-weight:600; color:#1F3864; }
+.cft-cell-d { display:inline-block; padding:2px 8px; border-radius:4px; font-weight:700; }
+.detail-filter { background:#EAF0F7; padding:10px 32px; font-size:13px; display:flex; align-items:center; gap:10px; }
+.detail-filter label { font-weight:500; color:#1F3864; }
+.detail-filter select { padding:5px 12px; font-size:13px; border:1px solid #C5D3E8; border-radius:6px; min-width:190px; background:#fff; color:#222; cursor:pointer; }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="title-band"><h1>7月华南CFT简报-7/13</h1></div>
+  <div class="header-row">
+    <div class="hcell">高级零售经理</div>
+    <div class="hcell col-yesterday">昨日CFT</div>
+    <div class="hcell">月累计CFT</div>
+    <div class="hcell">人均锁单</div>
+    <div class="hcell">人数</div>
+    <div class="hcell">跟进任务数</div>
+    <div class="hcell">到店次数</div>
+    <div class="hcell">邀约排程数</div>
+    <div class="hcell">试驾次数</div>
+    <div class="hcell">新增锁单数</div>
+    <div class="hcell col-may">6月CFT</div>
+    <div class="hcell col-change">月累变化</div>
+  </div>
+  <div class="huanan-row">
+    <div class="hcell">华南</div>
+    <div class="hcell">98.3</div>
+    <div class="hcell">110.1</div>
+    <div class="hcell">3.30</div>
+    <div class="hcell">978</div>
+    <div class="hcell">53,250</div>
+    <div class="hcell">1,867</div>
+    <div class="hcell">530</div>
+    <div class="hcell">1,208</div>
+    <div class="hcell">169</div>
+    <div class="hcell">113.4</div>
+    <div class="hcell"><div class="bar-wrap"><div class="bar red" style="width:18.9%;"></div><span class="bar-val red">-3.3</span></div></div>
+  </div>
+  <div class="mgr-row">
+    <div class="cell-mgr"><span class="mgr-name">李稳</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#2d7c31;color:#FFFFFF;">116.9</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#fcf9f1;color:#333333;">112.7</span></div>
+    <div class="cell">3.17</div>
+    <div class="cell">40</div>
+    <div class="cell">2,025</div>
+    <div class="cell">91</div>
+    <div class="cell">41</div>
+    <div class="cell">63</div>
+    <div class="cell">7</div>
+    <div class="cell">106.2</div>
+    <div class="bar-cell"><div class="bar-wrap"><div class="bar green" style="width:37.5%;"></div><span class="bar-val green">+6.5</span></div></div>
+  </div>
+  <div class="mgr-row">
+    <div class="cell-mgr"><span class="mgr-name">余子恩(代)</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#2d7c31;color:#FFFFFF;">113.2</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">103.9</span></div>
+    <div class="cell">3.27</div>
+    <div class="cell">63</div>
+    <div class="cell">3,359</div>
+    <div class="cell">129</div>
+    <div class="cell">55</div>
+    <div class="cell">99</div>
+    <div class="cell">14</div>
+    <div class="cell">114.6</div>
+    <div class="bar-cell"><div class="bar-wrap"><div class="bar red" style="width:61.6%;"></div><span class="bar-val red">-10.7</span></div></div>
+  </div>
+  <div class="mgr-row">
+    <div class="cell-mgr"><span class="mgr-name">余子恩</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#5f9e62;color:#FFFFFF;">108.8</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#2d7c31;color:#FFFFFF;">121.9</span></div>
+    <div class="cell">3.10</div>
+    <div class="cell">84</div>
+    <div class="cell">4,854</div>
+    <div class="cell">188</div>
+    <div class="cell">44</div>
+    <div class="cell">115</div>
+    <div class="cell">13</div>
+    <div class="cell">131.8</div>
+    <div class="bar-cell"><div class="bar-wrap"><div class="bar red" style="width:57.3%;"></div><span class="bar-val red">-9.9</span></div></div>
+  </div>
+  <div class="mgr-row">
+    <div class="cell-mgr"><span class="mgr-name">李博恩</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#fcf9f1;color:#333333;">101.8</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#2d7c31;color:#FFFFFF;">121.5</span></div>
+    <div class="cell">5.35</div>
+    <div class="cell">96</div>
+    <div class="cell">5,546</div>
+    <div class="cell">177</div>
+    <div class="cell">59</div>
+    <div class="cell">125</div>
+    <div class="cell">26</div>
+    <div class="cell">133.7</div>
+    <div class="bar-cell"><div class="bar-wrap"><div class="bar red" style="width:70.2%;"></div><span class="bar-val red">-12.2</span></div></div>
+  </div>
+  <div class="mgr-row">
+    <div class="cell-mgr"><span class="mgr-name">熊俊晖</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#fce4de;color:#333333;">97.2</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#fbd4c4;color:#333333;">111.6</span></div>
+    <div class="cell">2.96</div>
+    <div class="cell">109</div>
+    <div class="cell">5,559</div>
+    <div class="cell">233</div>
+    <div class="cell">54</div>
+    <div class="cell">126</div>
+    <div class="cell">15</div>
+    <div class="cell">111.8</div>
+    <div class="bar-cell"><div class="bar-wrap"><div class="bar red" style="width:1.1%;"></div><span class="bar-val red">-0.2</span></div></div>
+  </div>
+  <div class="mgr-row">
+    <div class="cell-mgr"><span class="mgr-name">庄文迪</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#fce4de;color:#333333;">96.6</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">108.4</span></div>
+    <div class="cell">4.13</div>
+    <div class="cell">52</div>
+    <div class="cell">2,921</div>
+    <div class="cell">103</div>
+    <div class="cell">13</div>
+    <div class="cell">63</div>
+    <div class="cell">13</div>
+    <div class="cell">99.5</div>
+    <div class="bar-cell"><div class="bar-wrap"><div class="bar green" style="width:51.3%;"></div><span class="bar-val green">+8.9</span></div></div>
+  </div>
+  <div class="mgr-row">
+    <div class="cell-mgr"><span class="mgr-name">林伟龙</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#fce4de;color:#333333;">96.6</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">106.2</span></div>
+    <div class="cell">2.70</div>
+    <div class="cell">88</div>
+    <div class="cell">4,483</div>
+    <div class="cell">188</div>
+    <div class="cell">38</div>
+    <div class="cell">102</div>
+    <div class="cell">13</div>
+    <div class="cell">122.9</div>
+    <div class="bar-cell"><div class="bar-wrap"><div class="bar red" style="width:96.2%;"></div><span class="bar-val red">-16.7</span></div></div>
+  </div>
+  <div class="mgr-row">
+    <div class="cell-mgr"><span class="mgr-name">黄伟峰</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#fce4de;color:#333333;">96.1</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">106.7</span></div>
+    <div class="cell">3.17</div>
+    <div class="cell">132</div>
+    <div class="cell">7,239</div>
+    <div class="cell">250</div>
+    <div class="cell">45</div>
+    <div class="cell">162</div>
+    <div class="cell">23</div>
+    <div class="cell">112.3</div>
+    <div class="bar-cell"><div class="bar-wrap"><div class="bar red" style="width:32.3%;"></div><span class="bar-val red">-5.6</span></div></div>
+  </div>
+  <div class="mgr-row">
+    <div class="cell-mgr"><span class="mgr-name">胡浩</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">93.7</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#fce4de;color:#333333;">110.0</span></div>
+    <div class="cell">3.20</div>
+    <div class="cell">79</div>
+    <div class="cell">2,849</div>
+    <div class="cell">168</div>
+    <div class="cell">58</div>
+    <div class="cell">96</div>
+    <div class="cell">19</div>
+    <div class="cell">115.7</div>
+    <div class="bar-cell"><div class="bar-wrap"><div class="bar red" style="width:33.2%;"></div><span class="bar-val red">-5.7</span></div></div>
+  </div>
+  <div class="mgr-row">
+    <div class="cell-mgr"><span class="mgr-name">方任昊</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">92.6</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">106.3</span></div>
+    <div class="cell">3.57</div>
+    <div class="cell">91</div>
+    <div class="cell">5,686</div>
+    <div class="cell">130</div>
+    <div class="cell">42</div>
+    <div class="cell">107</div>
+    <div class="cell">13</div>
+    <div class="cell">112.4</div>
+    <div class="bar-cell"><div class="bar-wrap"><div class="bar red" style="width:35.2%;"></div><span class="bar-val red">-6.1</span></div></div>
+  </div>
+  <div class="mgr-row">
+    <div class="cell-mgr"><span class="mgr-name">贾迪赫</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">92.3</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">107.5</span></div>
+    <div class="cell">2.47</div>
+    <div class="cell">70</div>
+    <div class="cell">4,642</div>
+    <div class="cell">110</div>
+    <div class="cell">30</div>
+    <div class="cell">73</div>
+    <div class="cell">8</div>
+    <div class="cell">90.2</div>
+    <div class="bar-cell"><div class="bar-wrap"><div class="bar green" style="width:100.0%;"></div><span class="bar-val green">+17.3</span></div></div>
+  </div>
+  <div class="mgr-row">
+    <div class="cell-mgr"><span class="mgr-name">罗捷</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">86.0</span></div>
+    <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">103.0</span></div>
+    <div class="cell">2.41</div>
+    <div class="cell">74</div>
+    <div class="cell">4,087</div>
+    <div class="cell">100</div>
+    <div class="cell">51</div>
+    <div class="cell">77</div>
+    <div class="cell">5</div>
+    <div class="cell">99.8</div>
+    <div class="bar-cell"><div class="bar-wrap"><div class="bar green" style="width:18.3%;"></div><span class="bar-val green">+3.2</span></div></div>
+  </div>
+  <div class="detail-spacer"></div>
+  <div class="detail-section">
+    <div class="detail-title">门店明细（7/13 昨天数据）</div>
+    <div class="detail-filter"><label>选择零售经理：</label><select id="mgrFilter"><option value="all">全部</option>
+      <option value="黄伟峰">黄伟峰</option>
+      <option value="熊俊晖">熊俊晖</option>
+      <option value="余子恩">余子恩</option>
+      <option value="余子恩(代)">余子恩(代)</option>
+      <option value="罗捷">罗捷</option>
+      <option value="贾迪赫">贾迪赫</option>
+      <option value="方任昊">方任昊</option>
+      <option value="林伟龙">林伟龙</option>
+      <option value="胡浩">胡浩</option>
+      <option value="庄文迪">庄文迪</option>
+      <option value="李稳">李稳</option>
+      <option value="李博恩">李博恩</option>
+    </select></div>
+    <div class="detail-grid-head">
+      <div>门店</div>
+      <div>零售高级经理</div>
+      <div>昨日CFT</div>
+      <div>人均锁单</div>
+      <div>人数</div>
+      <div>跟进任务数</div>
+      <div>到店次数</div>
+      <div>邀约排程数</div>
+      <div>试驾次数</div>
+      <div>新增锁单数</div>
+    </div>
+    <div class="detail-grid" data-mgr="黄伟峰">
+      <div class="store-name">广州体验中心天河广汕路店</div>
+      <div class="mgr-cell">黄伟峰</div>
+      <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">122.2</span></div>
+      <div>0.07</div>
+      <div>14</div>
+      <div>613</div>
+      <div>35</div>
+      <div>7</div>
+      <div>27</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="黄伟峰">
+      <div class="store-name">广州体验中心天河汇彩路店</div>
+      <div class="mgr-cell">黄伟峰</div>
+      <div><span class="cft-cell-d" style="background:#fcf9f1;color:#333333;">95.8</span></div>
+      <div>0.17</div>
+      <div>12</div>
+      <div>930</div>
+      <div>21</div>
+      <div>7</div>
+      <div>10</div>
+      <div>2</div>
+    </div>
+    <div class="detail-grid" data-mgr="黄伟峰">
+      <div class="store-name">广州体验中心番禺大道店</div>
+      <div class="mgr-cell">黄伟峰</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">106.7</span></div>
+      <div>0.21</div>
+      <div>14</div>
+      <div>637</div>
+      <div>29</div>
+      <div>5</div>
+      <div>23</div>
+      <div>3</div>
+    </div>
+    <div class="detail-grid" data-mgr="黄伟峰">
+      <div class="store-name">广州体验中心白云机场路店</div>
+      <div class="mgr-cell">黄伟峰</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">99.7</span></div>
+      <div>0.25</div>
+      <div>12</div>
+      <div>682</div>
+      <div>29</div>
+      <div>6</div>
+      <div>12</div>
+      <div>3</div>
+    </div>
+    <div class="detail-grid" data-mgr="黄伟峰">
+      <div class="store-name">广州零跑中心亚运大道店</div>
+      <div class="mgr-cell">黄伟峰</div>
+      <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">73.2</span></div>
+      <div>0.06</div>
+      <div>16</div>
+      <div>692</div>
+      <div>21</div>
+      <div>3</div>
+      <div>16</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="黄伟峰">
+      <div class="store-name">广州零跑中心新塘汽车城店</div>
+      <div class="mgr-cell">黄伟峰</div>
+      <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">83.4</span></div>
+      <div>0.31</div>
+      <div>16</div>
+      <div>819</div>
+      <div>29</div>
+      <div>7</div>
+      <div>14</div>
+      <div>5</div>
+    </div>
+    <div class="detail-grid" data-mgr="黄伟峰">
+      <div class="store-name">广州零跑中心沥滘海心沙店</div>
+      <div class="mgr-cell">黄伟峰</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">101.7</span></div>
+      <div>0.15</div>
+      <div>13</div>
+      <div>724</div>
+      <div>26</div>
+      <div>3</div>
+      <div>18</div>
+      <div>2</div>
+    </div>
+    <div class="detail-grid" data-mgr="黄伟峰">
+      <div class="store-name">广州零跑中心科学城店</div>
+      <div class="mgr-cell">黄伟峰</div>
+      <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">78.8</span></div>
+      <div>0.19</div>
+      <div>16</div>
+      <div>843</div>
+      <div>24</div>
+      <div>3</div>
+      <div>15</div>
+      <div>3</div>
+    </div>
+    <div class="detail-grid" data-mgr="黄伟峰">
+      <div class="store-name">广州零跑中心美轮汽车园店</div>
+      <div class="mgr-cell">黄伟峰</div>
+      <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">117.2</span></div>
+      <div>0.10</div>
+      <div>10</div>
+      <div>595</div>
+      <div>23</div>
+      <div>2</div>
+      <div>17</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="黄伟峰">
+      <div class="store-name">广州零跑中心金马汽车城店</div>
+      <div class="mgr-cell">黄伟峰</div>
+      <div><span class="cft-cell-d" style="background:#fcf9f1;color:#333333;">96.3</span></div>
+      <div>0.22</div>
+      <div>9</div>
+      <div>704</div>
+      <div>13</div>
+      <div>2</div>
+      <div>10</div>
+      <div>2</div>
+    </div>
+    <div class="detail-grid" data-mgr="熊俊晖">
+      <div class="store-name">广州体验中心为正车城店</div>
+      <div class="mgr-cell">熊俊晖</div>
+      <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">37.3</span></div>
+      <div>0.14</div>
+      <div>7</div>
+      <div>92</div>
+      <div>7</div>
+      <div>2</div>
+      <div>3</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="熊俊晖">
+      <div class="store-name">广州体验中心广花路店</div>
+      <div class="mgr-cell">熊俊晖</div>
+      <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">120.1</span></div>
+      <div>0.14</div>
+      <div>7</div>
+      <div>461</div>
+      <div>16</div>
+      <div>1</div>
+      <div>12</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="熊俊晖">
+      <div class="store-name">广州体验中心花都北站店</div>
+      <div class="mgr-cell">熊俊晖</div>
+      <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">65.6</span></div>
+      <div>0.00</div>
+      <div>7</div>
+      <div>239</div>
+      <div>10</div>
+      <div>4</div>
+      <div>5</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="熊俊晖">
+      <div class="store-name">广州零跑中心白云大道店</div>
+      <div class="mgr-cell">熊俊晖</div>
+      <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">120.7</span></div>
+      <div>0.25</div>
+      <div>12</div>
+      <div>757</div>
+      <div>28</div>
+      <div>2</div>
+      <div>21</div>
+      <div>3</div>
+    </div>
+    <div class="detail-grid" data-mgr="熊俊晖">
+      <div class="store-name">广州零跑中心花都建设路店</div>
+      <div class="mgr-cell">熊俊晖</div>
+      <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">80.5</span></div>
+      <div>0.00</div>
+      <div>12</div>
+      <div>883</div>
+      <div>15</div>
+      <div>0</div>
+      <div>10</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="熊俊晖">
+      <div class="store-name">汕头体验中心广汕路店</div>
+      <div class="mgr-cell">熊俊晖</div>
+      <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">36.9</span></div>
+      <div>0.11</div>
+      <div>9</div>
+      <div>154</div>
+      <div>7</div>
+      <div>3</div>
+      <div>4</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="熊俊晖">
+      <div class="store-name">汕头零跑中心汕汾路店</div>
+      <div class="mgr-cell">熊俊晖</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">111.7</span></div>
+      <div>0.17</div>
+      <div>12</div>
+      <div>421</div>
+      <div>38</div>
+      <div>5</div>
+      <div>17</div>
+      <div>2</div>
+    </div>
+    <div class="detail-grid" data-mgr="熊俊晖">
+      <div class="store-name">汕头零跑中心金凤路店</div>
+      <div class="mgr-cell">熊俊晖</div>
+      <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">125.0</span></div>
+      <div>0.10</div>
+      <div>10</div>
+      <div>610</div>
+      <div>19</div>
+      <div>15</div>
+      <div>17</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="熊俊晖">
+      <div class="store-name">河源体验中心坚基购物中心店</div>
+      <div class="mgr-cell">熊俊晖</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">103.1</span></div>
+      <div>0.17</div>
+      <div>6</div>
+      <div>357</div>
+      <div>14</div>
+      <div>5</div>
+      <div>6</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="熊俊晖">
+      <div class="store-name">河源零跑中心河源大道店</div>
+      <div class="mgr-cell">熊俊晖</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">104.0</span></div>
+      <div>0.25</div>
+      <div>12</div>
+      <div>656</div>
+      <div>36</div>
+      <div>8</div>
+      <div>10</div>
+      <div>3</div>
+    </div>
+    <div class="detail-grid" data-mgr="熊俊晖">
+      <div class="store-name">清远体验中心奇晟汽车城店</div>
+      <div class="mgr-cell">熊俊晖</div>
+      <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">91.6</span></div>
+      <div>0.17</div>
+      <div>6</div>
+      <div>339</div>
+      <div>12</div>
+      <div>5</div>
+      <div>5</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="熊俊晖">
+      <div class="store-name">清远零跑中心港鸿汽车城店</div>
+      <div class="mgr-cell">熊俊晖</div>
+      <div><span class="cft-cell-d" style="background:#5f9e62;color:#FFFFFF;">142.2</span></div>
+      <div>0.11</div>
+      <div>9</div>
+      <div>590</div>
+      <div>31</div>
+      <div>4</div>
+      <div>16</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="余子恩">
+      <div class="store-name">佛山体验中心北滘车城店</div>
+      <div class="mgr-cell">余子恩</div>
+      <div><span class="cft-cell-d" style="background:#5f9e62;color:#FFFFFF;">146.6</span></div>
+      <div>0.14</div>
+      <div>7</div>
+      <div>382</div>
+      <div>29</div>
+      <div>10</div>
+      <div>10</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="余子恩">
+      <div class="store-name">佛山体验中心容桂车城店</div>
+      <div class="mgr-cell">余子恩</div>
+      <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">73.4</span></div>
+      <div>0.00</div>
+      <div>7</div>
+      <div>448</div>
+      <div>10</div>
+      <div>2</div>
+      <div>4</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="余子恩">
+      <div class="store-name">佛山体验中心狮山汽车城店</div>
+      <div class="mgr-cell">余子恩</div>
+      <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">114.4</span></div>
+      <div>0.17</div>
+      <div>6</div>
+      <div>403</div>
+      <div>9</div>
+      <div>8</div>
+      <div>9</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="余子恩">
+      <div class="store-name">佛山体验中心高明荷香路店</div>
+      <div class="mgr-cell">余子恩</div>
+      <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">25.5</span></div>
+      <div>0.00</div>
+      <div>4</div>
+      <div>174</div>
+      <div>1</div>
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="余子恩">
+      <div class="store-name">佛山零跑中心三水友好车城店</div>
+      <div class="mgr-cell">余子恩</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">113.0</span></div>
+      <div>0.31</div>
+      <div>13</div>
+      <div>868</div>
+      <div>29</div>
+      <div>3</div>
+      <div>19</div>
+      <div>4</div>
+    </div>
+    <div class="detail-grid" data-mgr="余子恩">
+      <div class="store-name">佛山零跑中心顺德大良车城店</div>
+      <div class="mgr-cell">余子恩</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">108.0</span></div>
+      <div>0.20</div>
+      <div>15</div>
+      <div>881</div>
+      <div>32</div>
+      <div>1</div>
+      <div>23</div>
+      <div>3</div>
+    </div>
+    <div class="detail-grid" data-mgr="余子恩">
+      <div class="store-name">江门体验中心开平车城店</div>
+      <div class="mgr-cell">余子恩</div>
+      <div><span class="cft-cell-d" style="background:#5f9e62;color:#FFFFFF;">136.9</span></div>
+      <div>0.00</div>
+      <div>7</div>
+      <div>456</div>
+      <div>16</div>
+      <div>4</div>
+      <div>15</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="余子恩">
+      <div class="store-name">江门体验中心蓬江华鸿店</div>
+      <div class="mgr-cell">余子恩</div>
+      <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">121.0</span></div>
+      <div>0.00</div>
+      <div>2</div>
+      <div>214</div>
+      <div>3</div>
+      <div>3</div>
+      <div>2</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="余子恩">
+      <div class="store-name">江门零跑中心冈州大道店</div>
+      <div class="mgr-cell">余子恩</div>
+      <div><span class="cft-cell-d" style="background:#2d7c31;color:#FFFFFF;">159.0</span></div>
+      <div>0.09</div>
+      <div>11</div>
+      <div>617</div>
+      <div>40</div>
+      <div>12</div>
+      <div>24</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="余子恩">
+      <div class="store-name">江门零跑中心建设路店</div>
+      <div class="mgr-cell">余子恩</div>
+      <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">64.2</span></div>
+      <div>0.25</div>
+      <div>12</div>
+      <div>411</div>
+      <div>19</div>
+      <div>1</div>
+      <div>9</div>
+      <div>3</div>
+    </div>
+    <div class="detail-grid" data-mgr="余子恩(代)">
+      <div class="store-name">佛山体验中心广佛汽车城店</div>
+      <div class="mgr-cell">余子恩(代)</div>
+      <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">52.6</span></div>
+      <div>0.00</div>
+      <div>4</div>
+      <div>421</div>
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="余子恩(代)">
+      <div class="store-name">佛山体验中心海八西路店</div>
+      <div class="mgr-cell">余子恩(代)</div>
+      <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">122.2</span></div>
+      <div>0.38</div>
+      <div>8</div>
+      <div>536</div>
+      <div>16</div>
+      <div>5</div>
+      <div>14</div>
+      <div>3</div>
+    </div>
+    <div class="detail-grid" data-mgr="余子恩(代)">
+      <div class="store-name">佛山零跑中心南庄汽车城店</div>
+      <div class="mgr-cell">余子恩(代)</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">110.3</span></div>
+      <div>0.30</div>
+      <div>10</div>
+      <div>587</div>
+      <div>24</div>
+      <div>3</div>
+      <div>14</div>
+      <div>3</div>
+    </div>
+    <div class="detail-grid" data-mgr="余子恩(代)">
+      <div class="store-name">佛山零跑中心桂澜路店</div>
+      <div class="mgr-cell">余子恩(代)</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">99.1</span></div>
+      <div>0.25</div>
+      <div>8</div>
+      <div>325</div>
+      <div>12</div>
+      <div>6</div>
+      <div>13</div>
+      <div>2</div>
+    </div>
+    <div class="detail-grid" data-mgr="余子恩(代)">
+      <div class="store-name">佛山零跑中心海八路汽车城店</div>
+      <div class="mgr-cell">余子恩(代)</div>
+      <div><span class="cft-cell-d" style="background:#2d7c31;color:#FFFFFF;">175.2</span></div>
+      <div>0.06</div>
+      <div>16</div>
+      <div>826</div>
+      <div>48</div>
+      <div>32</div>
+      <div>45</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="余子恩(代)">
+      <div class="store-name">佛山零跑中心禅城国际汽车城店</div>
+      <div class="mgr-cell">余子恩(代)</div>
+      <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">73.4</span></div>
+      <div>0.29</div>
+      <div>17</div>
+      <div>664</div>
+      <div>29</div>
+      <div>9</div>
+      <div>13</div>
+      <div>5</div>
+    </div>
+    <div class="detail-grid" data-mgr="罗捷">
+      <div class="store-name">深圳体验中心杰鹏车城店</div>
+      <div class="mgr-cell">罗捷</div>
+      <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">70.7</span></div>
+      <div>0.08</div>
+      <div>12</div>
+      <div>517</div>
+      <div>8</div>
+      <div>11</div>
+      <div>12</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="罗捷">
+      <div class="store-name">深圳体验中心龙华中心店</div>
+      <div class="mgr-cell">罗捷</div>
+      <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">63.5</span></div>
+      <div>0.08</div>
+      <div>12</div>
+      <div>754</div>
+      <div>11</div>
+      <div>4</div>
+      <div>6</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="罗捷">
+      <div class="store-name">深圳零跑中心万国城旗舰店</div>
+      <div class="mgr-cell">罗捷</div>
+      <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">53.0</span></div>
+      <div>0.08</div>
+      <div>12</div>
+      <div>393</div>
+      <div>12</div>
+      <div>5</div>
+      <div>7</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="罗捷">
+      <div class="store-name">深圳零跑中心光明车城店</div>
+      <div class="mgr-cell">罗捷</div>
+      <div><span class="cft-cell-d" style="background:#5f9e62;color:#FFFFFF;">128.4</span></div>
+      <div>0.00</div>
+      <div>10</div>
+      <div>549</div>
+      <div>28</div>
+      <div>11</div>
+      <div>16</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="罗捷">
+      <div class="store-name">深圳零跑中心宝运达汽车城店</div>
+      <div class="mgr-cell">罗捷</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">109.8</span></div>
+      <div>0.14</div>
+      <div>14</div>
+      <div>793</div>
+      <div>26</div>
+      <div>12</div>
+      <div>21</div>
+      <div>2</div>
+    </div>
+    <div class="detail-grid" data-mgr="罗捷">
+      <div class="store-name">深圳零跑中心远望车城店</div>
+      <div class="mgr-cell">罗捷</div>
+      <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">92.5</span></div>
+      <div>0.00</div>
+      <div>14</div>
+      <div>1,081</div>
+      <div>15</div>
+      <div>8</div>
+      <div>15</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="贾迪赫">
+      <div class="store-name">深圳体验中心福田瑞鹏达店</div>
+      <div class="mgr-cell">贾迪赫</div>
+      <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">119.9</span></div>
+      <div>0.00</div>
+      <div>11</div>
+      <div>937</div>
+      <div>20</div>
+      <div>4</div>
+      <div>17</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="贾迪赫">
+      <div class="store-name">深圳体验中心锦龙大道店</div>
+      <div class="mgr-cell">贾迪赫</div>
+      <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">115.9</span></div>
+      <div>0.12</div>
+      <div>8</div>
+      <div>484</div>
+      <div>15</div>
+      <div>4</div>
+      <div>14</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="贾迪赫">
+      <div class="store-name">深圳体验中心龙岗信义店</div>
+      <div class="mgr-cell">贾迪赫</div>
+      <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">50.3</span></div>
+      <div>0.11</div>
+      <div>9</div>
+      <div>415</div>
+      <div>5</div>
+      <div>2</div>
+      <div>5</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="贾迪赫">
+      <div class="store-name">深圳零跑中心南山嘉进隆店</div>
+      <div class="mgr-cell">贾迪赫</div>
+      <div><span class="cft-cell-d" style="background:#fcf9f1;color:#333333;">98.1</span></div>
+      <div>0.19</div>
+      <div>16</div>
+      <div>1,318</div>
+      <div>30</div>
+      <div>10</div>
+      <div>12</div>
+      <div>3</div>
+    </div>
+    <div class="detail-grid" data-mgr="贾迪赫">
+      <div class="store-name">深圳零跑中心百世汽车城店</div>
+      <div class="mgr-cell">贾迪赫</div>
+      <div><span class="cft-cell-d" style="background:#fcf9f1;color:#333333;">94.6</span></div>
+      <div>0.20</div>
+      <div>15</div>
+      <div>718</div>
+      <div>32</div>
+      <div>7</div>
+      <div>17</div>
+      <div>3</div>
+    </div>
+    <div class="detail-grid" data-mgr="贾迪赫">
+      <div class="store-name">深圳零跑中心芙蓉路店</div>
+      <div class="mgr-cell">贾迪赫</div>
+      <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">70.5</span></div>
+      <div>0.00</div>
+      <div>11</div>
+      <div>770</div>
+      <div>8</div>
+      <div>3</div>
+      <div>8</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="方任昊">
+      <div class="store-name">东莞体验中心东城店</div>
+      <div class="mgr-cell">方任昊</div>
+      <div><span class="cft-cell-d" style="background:#5f9e62;color:#FFFFFF;">145.8</span></div>
+      <div>0.25</div>
+      <div>4</div>
+      <div>356</div>
+      <div>7</div>
+      <div>6</div>
+      <div>8</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="方任昊">
+      <div class="store-name">东莞体验中心厚街店</div>
+      <div class="mgr-cell">方任昊</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">111.5</span></div>
+      <div>0.00</div>
+      <div>7</div>
+      <div>571</div>
+      <div>15</div>
+      <div>3</div>
+      <div>8</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="方任昊">
+      <div class="store-name">东莞体验中心大岭山镇店</div>
+      <div class="mgr-cell">方任昊</div>
+      <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">22.6</span></div>
+      <div>0.00</div>
+      <div>7</div>
+      <div>156</div>
+      <div>0</div>
+      <div>2</div>
+      <div>2</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="方任昊">
+      <div class="store-name">东莞体验中心松山湖店</div>
+      <div class="mgr-cell">方任昊</div>
+      <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">91.4</span></div>
+      <div>0.17</div>
+      <div>6</div>
+      <div>627</div>
+      <div>5</div>
+      <div>4</div>
+      <div>4</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="方任昊">
+      <div class="store-name">东莞体验中心石排大道店</div>
+      <div class="mgr-cell">方任昊</div>
+      <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">81.2</span></div>
+      <div>0.20</div>
+      <div>10</div>
+      <div>435</div>
+      <div>13</div>
+      <div>7</div>
+      <div>11</div>
+      <div>2</div>
+    </div>
+    <div class="detail-grid" data-mgr="方任昊">
+      <div class="store-name">东莞零跑中心寮步车城店</div>
+      <div class="mgr-cell">方任昊</div>
+      <div><span class="cft-cell-d" style="background:#fcf9f1;color:#333333;">95.2</span></div>
+      <div>0.12</div>
+      <div>16</div>
+      <div>1,136</div>
+      <div>27</div>
+      <div>4</div>
+      <div>17</div>
+      <div>2</div>
+    </div>
+    <div class="detail-grid" data-mgr="方任昊">
+      <div class="store-name">东莞零跑中心常朗路店</div>
+      <div class="mgr-cell">方任昊</div>
+      <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">122.7</span></div>
+      <div>0.11</div>
+      <div>9</div>
+      <div>649</div>
+      <div>16</div>
+      <div>3</div>
+      <div>17</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="方任昊">
+      <div class="store-name">东莞零跑中心莞太路店</div>
+      <div class="mgr-cell">方任昊</div>
+      <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">90.8</span></div>
+      <div>0.27</div>
+      <div>15</div>
+      <div>934</div>
+      <div>27</div>
+      <div>7</div>
+      <div>14</div>
+      <div>4</div>
+    </div>
+    <div class="detail-grid" data-mgr="方任昊">
+      <div class="store-name">东莞零跑中心虎门车城店</div>
+      <div class="mgr-cell">方任昊</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">99.6</span></div>
+      <div>0.20</div>
+      <div>10</div>
+      <div>522</div>
+      <div>19</div>
+      <div>6</div>
+      <div>13</div>
+      <div>2</div>
+    </div>
+    <div class="detail-grid" data-mgr="方任昊">
+      <div class="store-name">东莞零跑中心长安振安东路店</div>
+      <div class="mgr-cell">方任昊</div>
+      <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">79.3</span></div>
+      <div>0.00</div>
+      <div>7</div>
+      <div>300</div>
+      <div>1</div>
+      <div>0</div>
+      <div>13</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="林伟龙">
+      <div class="store-name">中山体验中心港口店</div>
+      <div class="mgr-cell">林伟龙</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">110.1</span></div>
+      <div>0.12</div>
+      <div>8</div>
+      <div>392</div>
+      <div>21</div>
+      <div>4</div>
+      <div>11</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="林伟龙">
+      <div class="store-name">中山零跑中心中山六路店</div>
+      <div class="mgr-cell">林伟龙</div>
+      <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">42.3</span></div>
+      <div>0.10</div>
+      <div>10</div>
+      <div>256</div>
+      <div>9</div>
+      <div>4</div>
+      <div>4</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="林伟龙">
+      <div class="store-name">中山零跑中心小榄菊城大道店</div>
+      <div class="mgr-cell">林伟龙</div>
+      <div><span class="cft-cell-d" style="background:#5f9e62;color:#FFFFFF;">140.1</span></div>
+      <div>0.20</div>
+      <div>10</div>
+      <div>1,131</div>
+      <div>27</div>
+      <div>4</div>
+      <div>13</div>
+      <div>2</div>
+    </div>
+    <div class="detail-grid" data-mgr="林伟龙">
+      <div class="store-name">中山零跑中心彩虹大道店</div>
+      <div class="mgr-cell">林伟龙</div>
+      <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">73.6</span></div>
+      <div>0.18</div>
+      <div>11</div>
+      <div>320</div>
+      <div>20</div>
+      <div>8</div>
+      <div>9</div>
+      <div>2</div>
+    </div>
+    <div class="detail-grid" data-mgr="林伟龙">
+      <div class="store-name">中山零跑中心金宁汽车城店</div>
+      <div class="mgr-cell">林伟龙</div>
+      <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">120.6</span></div>
+      <div>0.10</div>
+      <div>10</div>
+      <div>662</div>
+      <div>25</div>
+      <div>2</div>
+      <div>16</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="林伟龙">
+      <div class="store-name">珠海体验中心美满车城店</div>
+      <div class="mgr-cell">林伟龙</div>
+      <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">74.8</span></div>
+      <div>0.12</div>
+      <div>8</div>
+      <div>286</div>
+      <div>11</div>
+      <div>2</div>
+      <div>9</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="林伟龙">
+      <div class="store-name">珠海体验中心西部车城店</div>
+      <div class="mgr-cell">林伟龙</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">109.9</span></div>
+      <div>0.11</div>
+      <div>9</div>
+      <div>448</div>
+      <div>19</div>
+      <div>3</div>
+      <div>15</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="林伟龙">
+      <div class="store-name">珠海零跑中心上冲车城店</div>
+      <div class="mgr-cell">林伟龙</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">105.1</span></div>
+      <div>0.23</div>
+      <div>13</div>
+      <div>552</div>
+      <div>38</div>
+      <div>10</div>
+      <div>14</div>
+      <div>3</div>
+    </div>
+    <div class="detail-grid" data-mgr="林伟龙">
+      <div class="store-name">珠海零跑中心南屏珠海大道店</div>
+      <div class="mgr-cell">林伟龙</div>
+      <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">92.0</span></div>
+      <div>0.11</div>
+      <div>9</div>
+      <div>436</div>
+      <div>18</div>
+      <div>1</div>
+      <div>11</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="胡浩">
+      <div class="store-name">惠州体验中心惠阳大道店</div>
+      <div class="mgr-cell">胡浩</div>
+      <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">66.6</span></div>
+      <div>0.14</div>
+      <div>7</div>
+      <div>363</div>
+      <div>7</div>
+      <div>0</div>
+      <div>6</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="胡浩">
+      <div class="store-name">惠州体验中心河南岸车城店</div>
+      <div class="mgr-cell">胡浩</div>
+      <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">69.9</span></div>
+      <div>0.12</div>
+      <div>8</div>
+      <div>178</div>
+      <div>10</div>
+      <div>2</div>
+      <div>10</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="胡浩">
+      <div class="store-name">惠州零跑中心仲恺汽车城店</div>
+      <div class="mgr-cell">胡浩</div>
+      <div><span class="cft-cell-d" style="background:#5f9e62;color:#FFFFFF;">131.2</span></div>
+      <div>0.10</div>
+      <div>10</div>
+      <div>474</div>
+      <div>25</div>
+      <div>7</div>
+      <div>21</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="胡浩">
+      <div class="store-name">惠州零跑中心惠南汽车城店</div>
+      <div class="mgr-cell">胡浩</div>
+      <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">115.2</span></div>
+      <div>0.23</div>
+      <div>13</div>
+      <div>415</div>
+      <div>38</div>
+      <div>15</div>
+      <div>19</div>
+      <div>3</div>
+    </div>
+    <div class="detail-grid" data-mgr="胡浩">
+      <div class="store-name">惠州零跑中心金山汽车城店</div>
+      <div class="mgr-cell">胡浩</div>
+      <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">126.7</span></div>
+      <div>0.60</div>
+      <div>15</div>
+      <div>650</div>
+      <div>49</div>
+      <div>24</div>
+      <div>20</div>
+      <div>9</div>
+    </div>
+    <div class="detail-grid" data-mgr="胡浩">
+      <div class="store-name">汕尾体验中心汕尾大道店</div>
+      <div class="mgr-cell">胡浩</div>
+      <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">46.6</span></div>
+      <div>0.14</div>
+      <div>7</div>
+      <div>182</div>
+      <div>11</div>
+      <div>4</div>
+      <div>1</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="胡浩">
+      <div class="store-name">韶关体验中心浈江大道店</div>
+      <div class="mgr-cell">胡浩</div>
+      <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">116.9</span></div>
+      <div>0.14</div>
+      <div>7</div>
+      <div>306</div>
+      <div>17</div>
+      <div>5</div>
+      <div>12</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="胡浩">
+      <div class="store-name">韶关零跑中心沐溪大道店</div>
+      <div class="mgr-cell">胡浩</div>
+      <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">43.8</span></div>
+      <div>0.17</div>
+      <div>12</div>
+      <div>281</div>
+      <div>11</div>
+      <div>1</div>
+      <div>7</div>
+      <div>2</div>
+    </div>
+    <div class="detail-grid" data-mgr="庄文迪">
+      <div class="store-name">湛江体验中心瀚龙车城店</div>
+      <div class="mgr-cell">庄文迪</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">104.0</span></div>
+      <div>0.20</div>
+      <div>5</div>
+      <div>240</div>
+      <div>10</div>
+      <div>1</div>
+      <div>8</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="庄文迪">
+      <div class="store-name">湛江体验中心粤西车城店</div>
+      <div class="mgr-cell">庄文迪</div>
+      <div><span class="cft-cell-d" style="background:#5f9e62;color:#FFFFFF;">149.2</span></div>
+      <div>0.20</div>
+      <div>5</div>
+      <div>472</div>
+      <div>18</div>
+      <div>3</div>
+      <div>7</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="庄文迪">
+      <div class="store-name">湛江零跑中心海田车城店</div>
+      <div class="mgr-cell">庄文迪</div>
+      <div><span class="cft-cell-d" style="background:#fcf9f1;color:#333333;">95.2</span></div>
+      <div>0.31</div>
+      <div>13</div>
+      <div>626</div>
+      <div>31</div>
+      <div>1</div>
+      <div>15</div>
+      <div>4</div>
+    </div>
+    <div class="detail-grid" data-mgr="庄文迪">
+      <div class="store-name">肇庆零跑中心肇庆大道店</div>
+      <div class="mgr-cell">庄文迪</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">99.8</span></div>
+      <div>0.18</div>
+      <div>11</div>
+      <div>616</div>
+      <div>22</div>
+      <div>4</div>
+      <div>14</div>
+      <div>2</div>
+    </div>
+    <div class="detail-grid" data-mgr="庄文迪">
+      <div class="store-name">茂名体验中心茂水路店</div>
+      <div class="mgr-cell">庄文迪</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">109.8</span></div>
+      <div>0.50</div>
+      <div>2</div>
+      <div>379</div>
+      <div>0</div>
+      <div>0</div>
+      <div>1</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="庄文迪">
+      <div class="store-name">茂名零跑中心茂名大道店</div>
+      <div class="mgr-cell">庄文迪</div>
+      <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">76.7</span></div>
+      <div>0.11</div>
+      <div>9</div>
+      <div>410</div>
+      <div>11</div>
+      <div>2</div>
+      <div>10</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="庄文迪">
+      <div class="store-name">阳江零跑中心溢信汽车城店</div>
+      <div class="mgr-cell">庄文迪</div>
+      <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">73.4</span></div>
+      <div>0.43</div>
+      <div>7</div>
+      <div>178</div>
+      <div>11</div>
+      <div>2</div>
+      <div>8</div>
+      <div>3</div>
+    </div>
+    <div class="detail-grid" data-mgr="李稳">
+      <div class="store-name">云浮体验中心环市中路店</div>
+      <div class="mgr-cell">李稳</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">110.6</span></div>
+      <div>0.12</div>
+      <div>8</div>
+      <div>289</div>
+      <div>16</div>
+      <div>11</div>
+      <div>13</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="李稳">
+      <div class="store-name">揭阳体验中心普宁万泰新天地商场店</div>
+      <div class="mgr-cell">李稳</div>
+      <div><span class="cft-cell-d" style="background:#2d7c31;color:#FFFFFF;">159.5</span></div>
+      <div>0.60</div>
+      <div>5</div>
+      <div>375</div>
+      <div>16</div>
+      <div>10</div>
+      <div>9</div>
+      <div>3</div>
+    </div>
+    <div class="detail-grid" data-mgr="李稳">
+      <div class="store-name">揭阳零跑中心荣通汽车城店</div>
+      <div class="mgr-cell">李稳</div>
+      <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">74.4</span></div>
+      <div>0.00</div>
+      <div>9</div>
+      <div>649</div>
+      <div>9</div>
+      <div>3</div>
+      <div>6</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="李稳">
+      <div class="store-name">梅州零跑中心剑英大道店</div>
+      <div class="mgr-cell">李稳</div>
+      <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">90.7</span></div>
+      <div>0.33</div>
+      <div>9</div>
+      <div>322</div>
+      <div>19</div>
+      <div>4</div>
+      <div>11</div>
+      <div>3</div>
+    </div>
+    <div class="detail-grid" data-mgr="李稳">
+      <div class="store-name">潮州零跑中心潮汕路店</div>
+      <div class="mgr-cell">李稳</div>
+      <div><span class="cft-cell-d" style="background:#2d7c31;color:#FFFFFF;">167.8</span></div>
+      <div>0.00</div>
+      <div>9</div>
+      <div>390</div>
+      <div>31</div>
+      <div>13</div>
+      <div>24</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="李博恩">
+      <div class="store-name">三亚体验中心迎宾路汽车城店</div>
+      <div class="mgr-cell">李博恩</div>
+      <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">74.5</span></div>
+      <div>0.22</div>
+      <div>9</div>
+      <div>681</div>
+      <div>8</div>
+      <div>0</div>
+      <div>7</div>
+      <div>2</div>
+    </div>
+    <div class="detail-grid" data-mgr="李博恩">
+      <div class="store-name">三亚零跑中心榆亚路店</div>
+      <div class="mgr-cell">李博恩</div>
+      <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">90.7</span></div>
+      <div>0.00</div>
+      <div>5</div>
+      <div>347</div>
+      <div>4</div>
+      <div>1</div>
+      <div>7</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="李博恩">
+      <div class="store-name">海口体验中心上邦百汇城店</div>
+      <div class="mgr-cell">李博恩</div>
+      <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">16.3</span></div>
+      <div>0.00</div>
+      <div>9</div>
+      <div>153</div>
+      <div>2</div>
+      <div>1</div>
+      <div>1</div>
+      <div>0</div>
+    </div>
+    <div class="detail-grid" data-mgr="李博恩">
+      <div class="store-name">海口体验中心江东店</div>
+      <div class="mgr-cell">李博恩</div>
+      <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">61.7</span></div>
+      <div>0.11</div>
+      <div>9</div>
+      <div>341</div>
+      <div>9</div>
+      <div>1</div>
+      <div>8</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="李博恩">
+      <div class="store-name">海口体验中心海口东站店</div>
+      <div class="mgr-cell">李博恩</div>
+      <div><span class="cft-cell-d" style="background:#2d7c31;color:#FFFFFF;">152.8</span></div>
+      <div>0.17</div>
+      <div>6</div>
+      <div>483</div>
+      <div>31</div>
+      <div>12</div>
+      <div>3</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="李博恩">
+      <div class="store-name">海口体验中心海甸城店</div>
+      <div class="mgr-cell">李博恩</div>
+      <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">35.1</span></div>
+      <div>0.29</div>
+      <div>7</div>
+      <div>211</div>
+      <div>4</div>
+      <div>2</div>
+      <div>2</div>
+      <div>2</div>
+    </div>
+    <div class="detail-grid" data-mgr="李博恩">
+      <div class="store-name">海口零跑中心南海大道东店</div>
+      <div class="mgr-cell">李博恩</div>
+      <div><span class="cft-cell-d" style="background:#2d7c31;color:#FFFFFF;">170.2</span></div>
+      <div>0.54</div>
+      <div>13</div>
+      <div>1,106</div>
+      <div>32</div>
+      <div>13</div>
+      <div>35</div>
+      <div>7</div>
+    </div>
+    <div class="detail-grid" data-mgr="李博恩">
+      <div class="store-name">海口零跑中心南海大道店（销售）</div>
+      <div class="mgr-cell">李博恩</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">104.7</span></div>
+      <div>0.27</div>
+      <div>15</div>
+      <div>670</div>
+      <div>35</div>
+      <div>11</div>
+      <div>20</div>
+      <div>4</div>
+    </div>
+    <div class="detail-grid" data-mgr="李博恩">
+      <div class="store-name">海口零跑中心海盛路店</div>
+      <div class="mgr-cell">李博恩</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">99.8</span></div>
+      <div>0.33</div>
+      <div>3</div>
+      <div>209</div>
+      <div>3</div>
+      <div>3</div>
+      <div>4</div>
+      <div>1</div>
+    </div>
+    <div class="detail-grid" data-mgr="李博恩">
+      <div class="store-name">海口零跑中心琼山大道店</div>
+      <div class="mgr-cell">李博恩</div>
+      <div><span class="cft-cell-d" style="background:#2d7c31;color:#FFFFFF;">154.5</span></div>
+      <div>0.45</div>
+      <div>11</div>
+      <div>909</div>
+      <div>31</div>
+      <div>6</div>
+      <div>24</div>
+      <div>5</div>
+    </div>
+    <div class="detail-grid" data-mgr="李博恩">
+      <div class="store-name">海口零跑中心美安科技城店</div>
+      <div class="mgr-cell">李博恩</div>
+      <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">110.9</span></div>
+      <div>0.33</div>
+      <div>9</div>
+      <div>436</div>
+      <div>18</div>
+      <div>9</div>
+      <div>14</div>
+      <div>3</div>
+    </div>
+  </div>
+  <div class="footer-note">待退网店、目前未验收店已剔除</div>
+</div>
+<script>
+(function(){
+  var sel = document.getElementById('mgrFilter');
+  if(!sel) return;
+  var rows = document.querySelectorAll('.detail-grid');
+  function apply(){
+    var v = sel.value;
+    var idx = 0;
+    rows.forEach(function(r){
+      if(v === 'all' || r.getAttribute('data-mgr') === v){
+        r.style.display = '';
+        r.style.background = (idx % 2 === 0) ? '#FFFFFF' : '#F7F9FC';
+        idx++;
+      } else {
+        r.style.display = 'none';
+      }
+    });
+  }
+  sel.addEventListener('change', apply);
+  apply();
+})();
+</script>
+</body>
+</html>
