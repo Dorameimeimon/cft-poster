@@ -10,13 +10,13 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
 .poster { width:1400px; margin:0 auto; background:#FFFFFF; border-radius:16px; overflow:hidden; }
 .title-band { background:#1F3864; margin:0 -32px; padding:24px 32px 12px; color:#FFFFFF; text-align:center; }
 .title-band h1 { font-size:22px; font-weight:700; letter-spacing:1px; margin-bottom:4px; }
-.header-row { display:grid; grid-template-columns:repeat(12, 1fr); align-items:center; font-size:13px; font-weight:500; text-align:center; background:#1B4332; color:#FFFFFF; padding:12px 32px; }
+.header-row { display:grid; grid-template-columns:repeat(13, 1fr); align-items:center; font-size:13px; font-weight:500; text-align:center; background:#1B4332; color:#FFFFFF; padding:12px 32px; }
 .header-row .hcell { display:flex; align-items:center; justify-content:center; }
 .header-row .hcell.col-yesterday { background:#2e7d32; }
 .header-row .hcell.col-may, .header-row .hcell.col-change { background:#d4e6f9; color:#222222; }
-.huanan-row { display:grid; grid-template-columns:repeat(12, 1fr); align-items:center; font-size:13px; font-weight:700; text-align:center; background:#D5E8D4; color:#222222; padding:12px 32px; }
+.huanan-row { display:grid; grid-template-columns:repeat(13, 1fr); align-items:center; font-size:13px; font-weight:700; text-align:center; background:#D5E8D4; color:#222222; padding:12px 32px; }
 .huanan-row .hcell { display:flex; align-items:center; justify-content:center; }
-.mgr-row { display:grid; grid-template-columns:repeat(12, 1fr); align-items:center; font-size:13px; font-weight:400; text-align:center; padding:12px 32px; border-bottom:1px solid #E8E8E8; }
+.mgr-row { display:grid; grid-template-columns:repeat(13, 1fr); align-items:center; font-size:13px; font-weight:400; text-align:center; padding:12px 32px; border-bottom:1px solid #E8E8E8; }
 .mgr-row:nth-child(even) { background:#F7F9FC; }
 .mgr-row:nth-child(odd) { background:#FFFFFF; }
 .mgr-row .cell { display:flex; align-items:center; justify-content:center; }
@@ -36,8 +36,8 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
 .detail-section { margin:0; }
 .detail-spacer { height:28px; }
 .detail-title { background:#1F3864; color:#FFFFFF; text-align:center; font-size:15px; font-weight:700; padding:12px 0; margin:0 -32px 0; letter-spacing:0.5px; }
-.detail-grid-head { display:grid; grid-template-columns: 2.4fr 1.4fr 1.1fr 1.1fr 0.9fr 1.3fr 1.1fr 1.3fr 1.1fr 1.3fr; background:#1B4332; color:#FFFFFF; font-size:12px; font-weight:500; text-align:center; align-items:center; padding:8px 32px; }
-.detail-grid { display:grid; grid-template-columns: 2.4fr 1.4fr 1.1fr 1.1fr 0.9fr 1.3fr 1.1fr 1.3fr 1.1fr 1.3fr; font-size:12px; text-align:center; align-items:center; padding:5px 32px; border-bottom:1px solid #f0f0f0; }
+.detail-grid-head { display:grid; grid-template-columns: 2.4fr 1.4fr 1.1fr 1.1fr 1.1fr 0.9fr 1.3fr 1.1fr 1.3fr 1.1fr 1.3fr; background:#1B4332; color:#FFFFFF; font-size:12px; font-weight:500; text-align:center; align-items:center; padding:8px 32px; }
+.detail-grid { display:grid; grid-template-columns: 2.4fr 1.4fr 1.1fr 1.1fr 1.1fr 0.9fr 1.3fr 1.1fr 1.3fr 1.1fr 1.3fr; font-size:12px; text-align:center; align-items:center; padding:5px 32px; border-bottom:1px solid #f0f0f0; }
 .detail-grid:nth-child(even) { background:#F7F9FC; }
 .detail-grid .store-name { text-align:center; font-weight:500; color:#333; }
 .detail-grid .mgr-cell { font-weight:600; color:#1F3864; }
@@ -54,6 +54,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
     <div class="hcell">高级零售经理</div>
     <div class="hcell col-yesterday">昨日CFT</div>
     <div class="hcell">月累计CFT</div>
+    <div class="hcell">月累潜客锁单率</div>
     <div class="hcell">人均锁单</div>
     <div class="hcell">人数</div>
     <div class="hcell">跟进任务数</div>
@@ -68,6 +69,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
     <div class="hcell">华南</div>
     <div class="hcell">106.2</div>
     <div class="hcell">112.0</div>
+    <div class="hcell">2.8%</div>
     <div class="hcell">5.68</div>
     <div class="hcell">969</div>
     <div class="hcell">1,084,703</div>
@@ -82,6 +84,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
     <div class="cell-mgr"><span class="mgr-name">李博恩</span></div>
     <div class="cell"><span class="cft-badge" style="background:#2d7c31;color:#FFFFFF;">124.4</span></div>
     <div class="cell"><span class="cft-badge" style="background:#2d7c31;color:#FFFFFF;">126.8</span></div>
+    <div class="cell">3.8%</div>
     <div class="cell">8.28</div>
     <div class="cell">95</div>
     <div class="cell">107,062</div>
@@ -96,6 +99,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
     <div class="cell-mgr"><span class="mgr-name">罗捷</span></div>
     <div class="cell"><span class="cft-badge" style="background:#2d7c31;color:#FFFFFF;">122.1</span></div>
     <div class="cell"><span class="cft-badge" style="background:#fbd4c4;color:#333333;">114.8</span></div>
+    <div class="cell">2.6%</div>
     <div class="cell">5.09</div>
     <div class="cell">66</div>
     <div class="cell">80,185</div>
@@ -110,6 +114,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
     <div class="cell-mgr"><span class="mgr-name">李稳</span></div>
     <div class="cell"><span class="cft-badge" style="background:#5f9e62;color:#FFFFFF;">113.0</span></div>
     <div class="cell"><span class="cft-badge" style="background:#a8d5aa;color:#333333;">119.7</span></div>
+    <div class="cell">2.8%</div>
     <div class="cell">5.95</div>
     <div class="cell">37</div>
     <div class="cell">40,242</div>
@@ -124,6 +129,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
     <div class="cell-mgr"><span class="mgr-name">余子恩</span></div>
     <div class="cell"><span class="cft-badge" style="background:#a8d5aa;color:#333333;">110.4</span></div>
     <div class="cell"><span class="cft-badge" style="background:#5f9e62;color:#FFFFFF;">122.2</span></div>
+    <div class="cell">2.9%</div>
     <div class="cell">5.38</div>
     <div class="cell">86</div>
     <div class="cell">97,210</div>
@@ -138,6 +144,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
     <div class="cell-mgr"><span class="mgr-name">余子恩(代)</span></div>
     <div class="cell"><span class="cft-badge" style="background:#a8d5aa;color:#333333;">109.8</span></div>
     <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">104.9</span></div>
+    <div class="cell">3.0%</div>
     <div class="cell">5.81</div>
     <div class="cell">62</div>
     <div class="cell">55,890</div>
@@ -152,6 +159,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
     <div class="cell-mgr"><span class="mgr-name">熊俊晖</span></div>
     <div class="cell"><span class="cft-badge" style="background:#dcedd6;color:#333333;">108.9</span></div>
     <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">108.1</span></div>
+    <div class="cell">2.5%</div>
     <div class="cell">4.82</div>
     <div class="cell">113</div>
     <div class="cell">134,237</div>
@@ -166,6 +174,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
     <div class="cell-mgr"><span class="mgr-name">黄伟峰</span></div>
     <div class="cell"><span class="cft-badge" style="background:#fcf9f1;color:#333333;">104.2</span></div>
     <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">110.4</span></div>
+    <div class="cell">2.6%</div>
     <div class="cell">5.95</div>
     <div class="cell">126</div>
     <div class="cell">151,564</div>
@@ -180,6 +189,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
     <div class="cell-mgr"><span class="mgr-name">庄文迪</span></div>
     <div class="cell"><span class="cft-badge" style="background:#fbd4c4;color:#333333;">103.9</span></div>
     <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">105.7</span></div>
+    <div class="cell">3.0%</div>
     <div class="cell">6.89</div>
     <div class="cell">54</div>
     <div class="cell">56,000</div>
@@ -194,6 +204,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
     <div class="cell-mgr"><span class="mgr-name">方任昊</span></div>
     <div class="cell"><span class="cft-badge" style="background:#fbd4c4;color:#333333;">103.7</span></div>
     <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">108.3</span></div>
+    <div class="cell">2.5%</div>
     <div class="cell">5.72</div>
     <div class="cell">93</div>
     <div class="cell">117,294</div>
@@ -208,6 +219,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
     <div class="cell-mgr"><span class="mgr-name">林伟龙</span></div>
     <div class="cell"><span class="cft-badge" style="background:#fbd4c4;color:#333333;">100.8</span></div>
     <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">110.5</span></div>
+    <div class="cell">2.7%</div>
     <div class="cell">4.85</div>
     <div class="cell">85</div>
     <div class="cell">89,583</div>
@@ -222,6 +234,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
     <div class="cell-mgr"><span class="mgr-name">胡浩</span></div>
     <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">89.2</span></div>
     <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">104.9</span></div>
+    <div class="cell">2.9%</div>
     <div class="cell">5.37</div>
     <div class="cell">82</div>
     <div class="cell">76,605</div>
@@ -236,6 +249,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
     <div class="cell-mgr"><span class="mgr-name">贾迪赫</span></div>
     <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">85.3</span></div>
     <div class="cell"><span class="cft-badge" style="background:#ff8269;color:#FFFFFF;">107.9</span></div>
+    <div class="cell">2.2%</div>
     <div class="cell">4.13</div>
     <div class="cell">70</div>
     <div class="cell">78,831</div>
@@ -267,6 +281,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div>门店</div>
       <div>零售高级经理</div>
       <div>昨日CFT</div>
+      <div>月累潜客锁单率</div>
       <div>人均锁单</div>
       <div>人数</div>
       <div>跟进任务数</div>
@@ -279,6 +294,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">广州体验中心天河广汕路店</div>
       <div class="mgr-cell">黄伟峰</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">101.3</span></div>
+      <div>2.3%</div>
       <div>0.18</div>
       <div>11</div>
       <div>629</div>
@@ -291,6 +307,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">广州体验中心天河汇彩路店</div>
       <div class="mgr-cell">黄伟峰</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">111.3</span></div>
+      <div>2.2%</div>
       <div>0.33</div>
       <div>12</div>
       <div>891</div>
@@ -303,6 +320,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">广州体验中心番禺大道店</div>
       <div class="mgr-cell">黄伟峰</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">81.2</span></div>
+      <div>2.9%</div>
       <div>0.21</div>
       <div>14</div>
       <div>695</div>
@@ -315,6 +333,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">广州体验中心白云机场路店</div>
       <div class="mgr-cell">黄伟峰</div>
       <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">152.4</span></div>
+      <div>2.3%</div>
       <div>0.08</div>
       <div>12</div>
       <div>718</div>
@@ -327,6 +346,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">广州零跑中心亚运大道店</div>
       <div class="mgr-cell">黄伟峰</div>
       <div><span class="cft-cell-d" style="background:#5f9e62;color:#FFFFFF;">172.0</span></div>
+      <div>2.5%</div>
       <div>0.17</div>
       <div>12</div>
       <div>798</div>
@@ -339,6 +359,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">广州零跑中心新塘汽车城店</div>
       <div class="mgr-cell">黄伟峰</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">80.3</span></div>
+      <div>3.5%</div>
       <div>0.12</div>
       <div>16</div>
       <div>849</div>
@@ -351,6 +372,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">广州零跑中心沥滘海心沙店</div>
       <div class="mgr-cell">黄伟峰</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">64.8</span></div>
+      <div>2.5%</div>
       <div>0.23</div>
       <div>13</div>
       <div>566</div>
@@ -363,6 +385,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">广州零跑中心科学城店</div>
       <div class="mgr-cell">黄伟峰</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">71.3</span></div>
+      <div>2.9%</div>
       <div>0.35</div>
       <div>17</div>
       <div>854</div>
@@ -375,6 +398,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">广州零跑中心美轮汽车园店</div>
       <div class="mgr-cell">黄伟峰</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">102.3</span></div>
+      <div>2.1%</div>
       <div>0.20</div>
       <div>10</div>
       <div>376</div>
@@ -387,6 +411,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">广州零跑中心金马汽车城店</div>
       <div class="mgr-cell">黄伟峰</div>
       <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">143.6</span></div>
+      <div>2.2%</div>
       <div>0.22</div>
       <div>9</div>
       <div>754</div>
@@ -399,6 +424,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">广州体验中心为正车城店</div>
       <div class="mgr-cell">熊俊晖</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">101.3</span></div>
+      <div>1.1%</div>
       <div>0.00</div>
       <div>7</div>
       <div>308</div>
@@ -411,6 +437,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">广州体验中心广花路店</div>
       <div class="mgr-cell">熊俊晖</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">92.5</span></div>
+      <div>1.1%</div>
       <div>0.17</div>
       <div>6</div>
       <div>350</div>
@@ -423,6 +450,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">广州体验中心花都北站店</div>
       <div class="mgr-cell">熊俊晖</div>
       <div><span class="cft-cell-d" style="background:#5f9e62;color:#FFFFFF;">183.1</span></div>
+      <div>1.5%</div>
       <div>0.14</div>
       <div>7</div>
       <div>463</div>
@@ -435,6 +463,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">广州零跑中心白云大道店</div>
       <div class="mgr-cell">熊俊晖</div>
       <div><span class="cft-cell-d" style="background:#fcf9f1;color:#333333;">137.3</span></div>
+      <div>2.6%</div>
       <div>0.23</div>
       <div>13</div>
       <div>689</div>
@@ -447,6 +476,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">广州零跑中心花都建设路店</div>
       <div class="mgr-cell">熊俊晖</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">82.3</span></div>
+      <div>2.2%</div>
       <div>0.07</div>
       <div>14</div>
       <div>654</div>
@@ -459,6 +489,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">汕头体验中心广汕路店</div>
       <div class="mgr-cell">熊俊晖</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">96.7</span></div>
+      <div>2.6%</div>
       <div>0.22</div>
       <div>9</div>
       <div>270</div>
@@ -471,6 +502,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">汕头零跑中心汕汾路店</div>
       <div class="mgr-cell">熊俊晖</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">91.0</span></div>
+      <div>3.7%</div>
       <div>0.17</div>
       <div>12</div>
       <div>603</div>
@@ -483,6 +515,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">汕头零跑中心金凤路店</div>
       <div class="mgr-cell">熊俊晖</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">88.8</span></div>
+      <div>3.4%</div>
       <div>0.18</div>
       <div>11</div>
       <div>573</div>
@@ -495,6 +528,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">河源体验中心坚基购物中心店</div>
       <div class="mgr-cell">熊俊晖</div>
       <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">131.0</span></div>
+      <div>2.4%</div>
       <div>0.17</div>
       <div>6</div>
       <div>322</div>
@@ -507,6 +541,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">河源零跑中心河源大道店</div>
       <div class="mgr-cell">熊俊晖</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">110.0</span></div>
+      <div>4.4%</div>
       <div>0.25</div>
       <div>12</div>
       <div>691</div>
@@ -519,6 +554,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">清远体验中心奇晟汽车城店</div>
       <div class="mgr-cell">熊俊晖</div>
       <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">127.8</span></div>
+      <div>1.7%</div>
       <div>0.33</div>
       <div>6</div>
       <div>293</div>
@@ -531,6 +567,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">清远零跑中心港鸿汽车城店</div>
       <div class="mgr-cell">熊俊晖</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">100.8</span></div>
+      <div>2.6%</div>
       <div>0.20</div>
       <div>10</div>
       <div>565</div>
@@ -543,6 +580,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">佛山体验中心北滘车城店</div>
       <div class="mgr-cell">余子恩</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">99.7</span></div>
+      <div>2.5%</div>
       <div>0.14</div>
       <div>7</div>
       <div>176</div>
@@ -555,6 +593,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">佛山体验中心容桂车城店</div>
       <div class="mgr-cell">余子恩</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">89.9</span></div>
+      <div>1.0%</div>
       <div>0.00</div>
       <div>7</div>
       <div>348</div>
@@ -567,6 +606,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">佛山体验中心狮山汽车城店</div>
       <div class="mgr-cell">余子恩</div>
       <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">170.2</span></div>
+      <div>2.1%</div>
       <div>0.17</div>
       <div>6</div>
       <div>242</div>
@@ -579,6 +619,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">佛山体验中心高明荷香路店</div>
       <div class="mgr-cell">余子恩</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">104.7</span></div>
+      <div>1.3%</div>
       <div>0.00</div>
       <div>5</div>
       <div>297</div>
@@ -591,6 +632,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">佛山零跑中心三水友好车城店</div>
       <div class="mgr-cell">余子恩</div>
       <div><span class="cft-cell-d" style="background:#fcf9f1;color:#333333;">137.1</span></div>
+      <div>3.7%</div>
       <div>0.36</div>
       <div>14</div>
       <div>889</div>
@@ -603,6 +645,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">佛山零跑中心顺德大良车城店</div>
       <div class="mgr-cell">余子恩</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">102.0</span></div>
+      <div>4.4%</div>
       <div>0.25</div>
       <div>16</div>
       <div>944</div>
@@ -615,6 +658,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">江门体验中心开平车城店</div>
       <div class="mgr-cell">余子恩</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">90.1</span></div>
+      <div>2.4%</div>
       <div>0.29</div>
       <div>7</div>
       <div>392</div>
@@ -627,6 +671,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">江门体验中心蓬江华鸿店</div>
       <div class="mgr-cell">余子恩</div>
       <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">157.8</span></div>
+      <div>0.0%</div>
       <div>0.00</div>
       <div>2</div>
       <div>171</div>
@@ -639,6 +684,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">江门零跑中心冈州大道店</div>
       <div class="mgr-cell">余子恩</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">98.5</span></div>
+      <div>3.0%</div>
       <div>0.36</div>
       <div>11</div>
       <div>427</div>
@@ -651,6 +697,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">江门零跑中心建设路店</div>
       <div class="mgr-cell">余子恩</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">94.9</span></div>
+      <div>3.2%</div>
       <div>0.18</div>
       <div>11</div>
       <div>338</div>
@@ -663,6 +710,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">佛山体验中心广佛汽车城店</div>
       <div class="mgr-cell">余子恩(代)</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">58.9</span></div>
+      <div>0.6%</div>
       <div>0.25</div>
       <div>4</div>
       <div>351</div>
@@ -675,6 +723,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">佛山体验中心海八西路店</div>
       <div class="mgr-cell">余子恩(代)</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">110.7</span></div>
+      <div>5.0%</div>
       <div>0.00</div>
       <div>8</div>
       <div>421</div>
@@ -687,6 +736,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">佛山零跑中心南庄汽车城店</div>
       <div class="mgr-cell">余子恩(代)</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">111.5</span></div>
+      <div>3.0%</div>
       <div>0.22</div>
       <div>9</div>
       <div>277</div>
@@ -699,6 +749,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">佛山零跑中心桂澜路店</div>
       <div class="mgr-cell">余子恩(代)</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">48.9</span></div>
+      <div>1.5%</div>
       <div>0.25</div>
       <div>8</div>
       <div>273</div>
@@ -711,6 +762,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">佛山零跑中心海八路汽车城店</div>
       <div class="mgr-cell">余子恩(代)</div>
       <div><span class="cft-cell-d" style="background:#5f9e62;color:#FFFFFF;">187.7</span></div>
+      <div>3.9%</div>
       <div>0.25</div>
       <div>16</div>
       <div>625</div>
@@ -723,6 +775,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">佛山零跑中心禅城国际汽车城店</div>
       <div class="mgr-cell">余子恩(代)</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">75.8</span></div>
+      <div>3.7%</div>
       <div>0.24</div>
       <div>17</div>
       <div>717</div>
@@ -735,6 +788,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">深圳体验中心杰鹏车城店</div>
       <div class="mgr-cell">罗捷</div>
       <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">142.9</span></div>
+      <div>2.0%</div>
       <div>0.22</div>
       <div>9</div>
       <div>763</div>
@@ -747,6 +801,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">深圳体验中心龙华中心店</div>
       <div class="mgr-cell">罗捷</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">74.7</span></div>
+      <div>2.5%</div>
       <div>0.20</div>
       <div>10</div>
       <div>444</div>
@@ -759,6 +814,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">深圳零跑中心万国城旗舰店</div>
       <div class="mgr-cell">罗捷</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">70.8</span></div>
+      <div>3.5%</div>
       <div>0.23</div>
       <div>13</div>
       <div>291</div>
@@ -771,6 +827,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">深圳零跑中心光明车城店</div>
       <div class="mgr-cell">罗捷</div>
       <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">148.2</span></div>
+      <div>2.9%</div>
       <div>0.30</div>
       <div>10</div>
       <div>633</div>
@@ -783,6 +840,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">深圳零跑中心宝运达汽车城店</div>
       <div class="mgr-cell">罗捷</div>
       <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">152.9</span></div>
+      <div>2.1%</div>
       <div>0.25</div>
       <div>12</div>
       <div>539</div>
@@ -795,6 +853,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">深圳零跑中心远望车城店</div>
       <div class="mgr-cell">罗捷</div>
       <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">148.8</span></div>
+      <div>2.7%</div>
       <div>0.08</div>
       <div>12</div>
       <div>692</div>
@@ -807,6 +866,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">深圳体验中心福田瑞鹏达店</div>
       <div class="mgr-cell">贾迪赫</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">66.2</span></div>
+      <div>1.9%</div>
       <div>0.20</div>
       <div>10</div>
       <div>373</div>
@@ -819,6 +879,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">深圳体验中心锦龙大道店</div>
       <div class="mgr-cell">贾迪赫</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">56.0</span></div>
+      <div>0.9%</div>
       <div>0.12</div>
       <div>8</div>
       <div>306</div>
@@ -831,6 +892,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">深圳体验中心龙岗信义店</div>
       <div class="mgr-cell">贾迪赫</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">78.7</span></div>
+      <div>2.3%</div>
       <div>0.10</div>
       <div>10</div>
       <div>233</div>
@@ -843,6 +905,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">深圳零跑中心南山嘉进隆店</div>
       <div class="mgr-cell">贾迪赫</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">87.4</span></div>
+      <div>2.7%</div>
       <div>0.13</div>
       <div>15</div>
       <div>681</div>
@@ -855,6 +918,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">深圳零跑中心百世汽车城店</div>
       <div class="mgr-cell">贾迪赫</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">87.5</span></div>
+      <div>3.3%</div>
       <div>0.13</div>
       <div>15</div>
       <div>775</div>
@@ -867,6 +931,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">深圳零跑中心芙蓉路店</div>
       <div class="mgr-cell">贾迪赫</div>
       <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">121.0</span></div>
+      <div>1.7%</div>
       <div>0.00</div>
       <div>12</div>
       <div>414</div>
@@ -879,6 +944,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">东莞体验中心东城店</div>
       <div class="mgr-cell">方任昊</div>
       <div><span class="cft-cell-d" style="background:#5f9e62;color:#FFFFFF;">195.0</span></div>
+      <div>2.2%</div>
       <div>0.20</div>
       <div>5</div>
       <div>380</div>
@@ -891,6 +957,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">东莞体验中心厚街店</div>
       <div class="mgr-cell">方任昊</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">105.9</span></div>
+      <div>1.2%</div>
       <div>0.29</div>
       <div>7</div>
       <div>343</div>
@@ -903,6 +970,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">东莞体验中心大岭山镇店</div>
       <div class="mgr-cell">方任昊</div>
       <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">120.1</span></div>
+      <div>1.8%</div>
       <div>0.17</div>
       <div>6</div>
       <div>411</div>
@@ -915,6 +983,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">东莞体验中心松山湖店</div>
       <div class="mgr-cell">方任昊</div>
       <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">118.3</span></div>
+      <div>2.6%</div>
       <div>0.33</div>
       <div>6</div>
       <div>510</div>
@@ -927,6 +996,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">东莞体验中心石排大道店</div>
       <div class="mgr-cell">方任昊</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">110.3</span></div>
+      <div>3.3%</div>
       <div>0.11</div>
       <div>9</div>
       <div>496</div>
@@ -939,6 +1009,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">东莞零跑中心寮步车城店</div>
       <div class="mgr-cell">方任昊</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">77.5</span></div>
+      <div>3.7%</div>
       <div>0.31</div>
       <div>16</div>
       <div>749</div>
@@ -951,6 +1022,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">东莞零跑中心常朗路店</div>
       <div class="mgr-cell">方任昊</div>
       <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">121.4</span></div>
+      <div>2.1%</div>
       <div>0.33</div>
       <div>9</div>
       <div>186</div>
@@ -963,6 +1035,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">东莞零跑中心莞太路店</div>
       <div class="mgr-cell">方任昊</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">78.8</span></div>
+      <div>2.8%</div>
       <div>0.39</div>
       <div>18</div>
       <div>946</div>
@@ -975,6 +1048,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">东莞零跑中心虎门车城店</div>
       <div class="mgr-cell">方任昊</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">85.8</span></div>
+      <div>3.0%</div>
       <div>0.30</div>
       <div>10</div>
       <div>456</div>
@@ -987,6 +1061,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">东莞零跑中心长安振安东路店</div>
       <div class="mgr-cell">方任昊</div>
       <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">128.1</span></div>
+      <div>1.8%</div>
       <div>0.00</div>
       <div>7</div>
       <div>983</div>
@@ -999,6 +1074,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">中山体验中心港口店</div>
       <div class="mgr-cell">林伟龙</div>
       <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">130.3</span></div>
+      <div>1.3%</div>
       <div>0.12</div>
       <div>8</div>
       <div>365</div>
@@ -1011,6 +1087,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">中山零跑中心中山六路店</div>
       <div class="mgr-cell">林伟龙</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">110.7</span></div>
+      <div>2.0%</div>
       <div>0.17</div>
       <div>6</div>
       <div>278</div>
@@ -1023,6 +1100,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">中山零跑中心小榄菊城大道店</div>
       <div class="mgr-cell">林伟龙</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">106.6</span></div>
+      <div>3.7%</div>
       <div>0.30</div>
       <div>10</div>
       <div>742</div>
@@ -1035,6 +1113,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">中山零跑中心彩虹大道店</div>
       <div class="mgr-cell">林伟龙</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">102.3</span></div>
+      <div>3.0%</div>
       <div>0.25</div>
       <div>12</div>
       <div>376</div>
@@ -1047,6 +1126,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">中山零跑中心金宁汽车城店</div>
       <div class="mgr-cell">林伟龙</div>
       <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">123.3</span></div>
+      <div>2.1%</div>
       <div>0.20</div>
       <div>10</div>
       <div>577</div>
@@ -1059,6 +1139,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">珠海体验中心美满车城店</div>
       <div class="mgr-cell">林伟龙</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">86.8</span></div>
+      <div>3.0%</div>
       <div>0.12</div>
       <div>8</div>
       <div>219</div>
@@ -1071,6 +1152,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">珠海体验中心西部车城店</div>
       <div class="mgr-cell">林伟龙</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">87.7</span></div>
+      <div>2.0%</div>
       <div>0.11</div>
       <div>9</div>
       <div>329</div>
@@ -1083,6 +1165,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">珠海零跑中心上冲车城店</div>
       <div class="mgr-cell">林伟龙</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">81.3</span></div>
+      <div>4.4%</div>
       <div>0.31</div>
       <div>13</div>
       <div>474</div>
@@ -1095,6 +1178,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">珠海零跑中心南屏珠海大道店</div>
       <div class="mgr-cell">林伟龙</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">87.7</span></div>
+      <div>2.7%</div>
       <div>0.11</div>
       <div>9</div>
       <div>369</div>
@@ -1107,6 +1191,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">惠州体验中心惠阳大道店</div>
       <div class="mgr-cell">胡浩</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">88.4</span></div>
+      <div>2.1%</div>
       <div>0.12</div>
       <div>8</div>
       <div>274</div>
@@ -1119,6 +1204,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">惠州体验中心河南岸车城店</div>
       <div class="mgr-cell">胡浩</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">66.6</span></div>
+      <div>1.4%</div>
       <div>0.25</div>
       <div>8</div>
       <div>116</div>
@@ -1131,6 +1217,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">惠州零跑中心仲恺汽车城店</div>
       <div class="mgr-cell">胡浩</div>
       <div><span class="cft-cell-d" style="background:#fcf9f1;color:#333333;">134.0</span></div>
+      <div>1.6%</div>
       <div>0.10</div>
       <div>10</div>
       <div>720</div>
@@ -1143,6 +1230,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">惠州零跑中心惠南汽车城店</div>
       <div class="mgr-cell">胡浩</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">91.5</span></div>
+      <div>3.7%</div>
       <div>0.36</div>
       <div>14</div>
       <div>302</div>
@@ -1155,6 +1243,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">惠州零跑中心金山汽车城店</div>
       <div class="mgr-cell">胡浩</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">83.6</span></div>
+      <div>4.9%</div>
       <div>0.13</div>
       <div>15</div>
       <div>918</div>
@@ -1167,6 +1256,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">汕尾体验中心汕尾大道店</div>
       <div class="mgr-cell">胡浩</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">46.5</span></div>
+      <div>3.6%</div>
       <div>0.12</div>
       <div>8</div>
       <div>124</div>
@@ -1179,6 +1269,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">韶关体验中心浈江大道店</div>
       <div class="mgr-cell">胡浩</div>
       <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">139.1</span></div>
+      <div>2.4%</div>
       <div>0.29</div>
       <div>7</div>
       <div>417</div>
@@ -1191,6 +1282,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">韶关零跑中心沐溪大道店</div>
       <div class="mgr-cell">胡浩</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">71.1</span></div>
+      <div>2.2%</div>
       <div>0.17</div>
       <div>12</div>
       <div>506</div>
@@ -1203,6 +1295,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">湛江体验中心瀚龙车城店</div>
       <div class="mgr-cell">庄文迪</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">72.6</span></div>
+      <div>2.5%</div>
       <div>0.40</div>
       <div>5</div>
       <div>176</div>
@@ -1215,6 +1308,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">湛江体验中心粤西车城店</div>
       <div class="mgr-cell">庄文迪</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">68.2</span></div>
+      <div>1.8%</div>
       <div>0.20</div>
       <div>5</div>
       <div>352</div>
@@ -1227,6 +1321,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">湛江零跑中心海田车城店</div>
       <div class="mgr-cell">庄文迪</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">93.6</span></div>
+      <div>2.9%</div>
       <div>0.15</div>
       <div>13</div>
       <div>503</div>
@@ -1239,6 +1334,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">肇庆零跑中心肇庆大道店</div>
       <div class="mgr-cell">庄文迪</div>
       <div><span class="cft-cell-d" style="background:#fcf9f1;color:#333333;">132.2</span></div>
+      <div>3.3%</div>
       <div>0.64</div>
       <div>11</div>
       <div>589</div>
@@ -1251,6 +1347,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">茂名体验中心茂水路店</div>
       <div class="mgr-cell">庄文迪</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">112.9</span></div>
+      <div>1.6%</div>
       <div>0.00</div>
       <div>4</div>
       <div>363</div>
@@ -1263,6 +1360,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">茂名零跑中心茂名大道店</div>
       <div class="mgr-cell">庄文迪</div>
       <div><span class="cft-cell-d" style="background:#a8d5aa;color:#333333;">155.7</span></div>
+      <div>3.8%</div>
       <div>0.22</div>
       <div>9</div>
       <div>482</div>
@@ -1275,6 +1373,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">阳江零跑中心溢信汽车城店</div>
       <div class="mgr-cell">庄文迪</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">54.9</span></div>
+      <div>5.3%</div>
       <div>0.43</div>
       <div>7</div>
       <div>89</div>
@@ -1287,6 +1386,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">云浮体验中心环市中路店</div>
       <div class="mgr-cell">李稳</div>
       <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">118.6</span></div>
+      <div>3.2%</div>
       <div>0.25</div>
       <div>8</div>
       <div>247</div>
@@ -1299,6 +1399,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">揭阳体验中心普宁万泰新天地商场店</div>
       <div class="mgr-cell">李稳</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">91.2</span></div>
+      <div>2.2%</div>
       <div>0.17</div>
       <div>6</div>
       <div>234</div>
@@ -1311,6 +1412,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">揭阳零跑中心荣通汽车城店</div>
       <div class="mgr-cell">李稳</div>
       <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">119.4</span></div>
+      <div>2.4%</div>
       <div>0.33</div>
       <div>9</div>
       <div>430</div>
@@ -1323,6 +1425,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">梅州零跑中心剑英大道店</div>
       <div class="mgr-cell">李稳</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">87.4</span></div>
+      <div>4.1%</div>
       <div>0.00</div>
       <div>7</div>
       <div>304</div>
@@ -1335,6 +1438,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">潮州零跑中心潮汕路店</div>
       <div class="mgr-cell">李稳</div>
       <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">142.8</span></div>
+      <div>2.5%</div>
       <div>0.14</div>
       <div>7</div>
       <div>349</div>
@@ -1347,6 +1451,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">三亚体验中心迎宾路汽车城店</div>
       <div class="mgr-cell">李博恩</div>
       <div><span class="cft-cell-d" style="background:#fcf9f1;color:#333333;">136.5</span></div>
+      <div>4.9%</div>
       <div>0.50</div>
       <div>8</div>
       <div>394</div>
@@ -1359,6 +1464,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">三亚零跑中心榆亚路店</div>
       <div class="mgr-cell">李博恩</div>
       <div><span class="cft-cell-d" style="background:#2d7c31;color:#FFFFFF;">223.8</span></div>
+      <div>6.6%</div>
       <div>0.60</div>
       <div>5</div>
       <div>388</div>
@@ -1371,6 +1477,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">海口体验中心上邦百汇城店</div>
       <div class="mgr-cell">李博恩</div>
       <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">119.8</span></div>
+      <div>3.6%</div>
       <div>0.11</div>
       <div>9</div>
       <div>406</div>
@@ -1383,6 +1490,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">海口体验中心江东店</div>
       <div class="mgr-cell">李博恩</div>
       <div><span class="cft-cell-d" style="background:#fcf9f1;color:#333333;">134.7</span></div>
+      <div>3.1%</div>
       <div>0.22</div>
       <div>9</div>
       <div>384</div>
@@ -1395,6 +1503,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">海口体验中心海口东站店</div>
       <div class="mgr-cell">李博恩</div>
       <div><span class="cft-cell-d" style="background:#dcedd6;color:#333333;">147.1</span></div>
+      <div>2.6%</div>
       <div>0.33</div>
       <div>6</div>
       <div>415</div>
@@ -1407,6 +1516,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">海口体验中心海甸城店</div>
       <div class="mgr-cell">李博恩</div>
       <div><span class="cft-cell-d" style="background:#fce4de;color:#333333;">112.9</span></div>
+      <div>4.3%</div>
       <div>0.14</div>
       <div>7</div>
       <div>360</div>
@@ -1419,6 +1529,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">海口零跑中心南海大道东店</div>
       <div class="mgr-cell">李博恩</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">85.5</span></div>
+      <div>5.2%</div>
       <div>0.38</div>
       <div>13</div>
       <div>352</div>
@@ -1431,6 +1542,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">海口零跑中心南海大道店（销售）</div>
       <div class="mgr-cell">李博恩</div>
       <div><span class="cft-cell-d" style="background:#fbd4c4;color:#333333;">125.5</span></div>
+      <div>5.4%</div>
       <div>0.27</div>
       <div>15</div>
       <div>444</div>
@@ -1443,6 +1555,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">海口零跑中心海盛路店</div>
       <div class="mgr-cell">李博恩</div>
       <div><span class="cft-cell-d" style="background:#2d7c31;color:#FFFFFF;">209.8</span></div>
+      <div>1.2%</div>
       <div>0.33</div>
       <div>3</div>
       <div>89</div>
@@ -1455,6 +1568,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">海口零跑中心琼山大道店</div>
       <div class="mgr-cell">李博恩</div>
       <div><span class="cft-cell-d" style="background:#ff8269;color:#FFFFFF;">74.0</span></div>
+      <div>2.9%</div>
       <div>0.27</div>
       <div>11</div>
       <div>558</div>
@@ -1467,6 +1581,7 @@ body { font-family:'Noto Sans SC',sans-serif; background:#F1EFE8; padding:40px; 
       <div class="store-name">海口零跑中心美安科技城店</div>
       <div class="mgr-cell">李博恩</div>
       <div><span class="cft-cell-d" style="background:#fcf9f1;color:#333333;">134.2</span></div>
+      <div>2.0%</div>
       <div>0.22</div>
       <div>9</div>
       <div>256</div>
